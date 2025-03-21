@@ -41,7 +41,7 @@ plot(data$DateTime, data$Sub_metering_1, type = "l", xlab = "", ylab = "Energy s
 lines(data$DateTime, data$Sub_metering_2, col = "red")
 lines(data$DateTime, data$Sub_metering_3, col = "blue")
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-       col = c("black", "red", "blue"), lty = 1, bty = "n")
+       col = c("black", "red", "blue"), lty = 1, bty = "n", cex = 0.5)
 tick_positions <- c(min(data$DateTime), 
                     min(data$DateTime) + 86400,  # +1 day in seconds
                     min(data$DateTime) + 2 * 86400)  # +2 days
